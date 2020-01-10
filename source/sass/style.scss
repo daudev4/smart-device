@@ -1,3 +1,6 @@
-h1 {
-  color: red;
-}
+@import "global/normalize";
+@import "global/fonts";
+@import "global/variables";
+@import "global/mixins";
+@import "global/base";
+@import "block/visually-hidden";

@@ -1,0 +1,31 @@
+@mixin list-reset() {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+@mixin button-reset() {
+  padding: 0;
+
+  font: inherit;
+  color: inherit;
+
+  border: none;
+}
+
+@mixin font($family, $size, $weight, $height) {
+  font-family: $family;
+  font-size: $size;
+  font-weight: $weight;
+  line-height: $height;
+}
+
+@mixin font-main($family: $font-family_main, $size: $font-size_m, $weight: 400, $height: $line-height_m) {
+  @include font($family, $size, $weight, $height)
+}
+
+@mixin font-headline($family: $font-family_headline, $size: $font-size_l, $weight: 400, $height: $line-height_l) {
+  @include font($family, $size, $weight, $height)
+}
+

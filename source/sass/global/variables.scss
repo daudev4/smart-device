@@ -1,0 +1,32 @@
+// colors
+$white: #ffffff;
+$white_darken: #fafafa;
+
+$blue_light: #00b2ff;
+
+$grey_light: #c4c4c4;
+$grey_lighter: #cdcdcd;
+$grey_dark: #626269;
+$grey_darker: #666666;
+$grey_darkest: #1b2d37;
+
+// fonts
+$font-family_main: "PT Mono", "Courier New", monospace;
+$font-family_headline: "Roboto Condensed", "Arial", sans-serif;
+
+$font-size_l: 20px;
+$font-size_m: 16px;
+
+$line-height_l: 30px;
+$line-height_m: 22px;
+
+$font-color_light: $white;
+$font-color_dark: $grey_darker;
+
+// breakpoints
+$mobile-width: 767px;
+$tablet-width: 1023px;
+
+// retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

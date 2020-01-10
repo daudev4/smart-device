@@ -14,6 +14,17 @@
   padding: 33px 0;
 }
 
+.page-header__logo {
+  &[href]:hover,
+  &[href]:focus {
+    opacity: 0.7;
+  }
+
+  &[href]:active {
+    opacity: 0.3;
+  }
+}
+
 .page-header__contacts {
   display: flex;
   align-items: center;

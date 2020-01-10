@@ -10,18 +10,23 @@ $grey_dark: #626269;
 $grey_darker: #666666;
 $grey_darkest: #1b2d37;
 
+// color pallete
+$color-main_light: $white;
+$color-main_dark: $grey_darker;
+$color-accent: $blue-light;
+
 // fonts
 $font-family_main: "PT Mono", "Courier New", monospace;
 $font-family_headline: "Roboto Condensed", "Arial", sans-serif;
 
+
 $font-size_l: 20px;
 $font-size_m: 16px;
+$font-size_s: 14px;
 
 $line-height_l: 30px;
 $line-height_m: 22px;
-
-$font-color_light: $white;
-$font-color_dark: $grey_darker;
+$line-height_s: 16px;
 
 // breakpoints
 $mobile-width: 767px;

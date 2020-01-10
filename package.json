@@ -6,7 +6,11 @@
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",
     "browser-sync": "2.26.x",
+    "eslint": "4.16.0",
+    "eslint-config-htmlacademy": "0.4.x",
     "gulp": "4.0.x",
+    "gulp-cheerio": "^1.0.0",
+    "gulp-cheerio-clean-svg": "github:Hiswe/gulp-cheerio-clean-svg",
     "gulp-csso": "^3.0.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-plumber": "1.2.x",
@@ -20,9 +24,7 @@
     "pixel-glass": "^1.0.13",
     "posthtml-include": "^1.2.0",
     "stylelint": "9.10.x",
-    "stylelint-config-htmlacademy": "0.1.x",
-    "eslint": "4.16.0",
-    "eslint-config-htmlacademy": "0.4.x"
+    "stylelint-config-htmlacademy": "0.1.x"
   },
   "scripts": {
     "editorconfig": "editorconfig-cli",

@@ -6,7 +6,7 @@ body {
   min-width: 320px;
 
   @include font-main();
-  color: $font-color_dark;
+  color: $color-main_dark;
 
   background-color: $white;
 }
@@ -30,4 +30,8 @@ a {
 input,
 textarea {
   border-radius: 0;
+}
+
+svg {
+  fill: inherit;
 }

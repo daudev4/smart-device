@@ -1,19 +1,24 @@
 // colors
 $white: #ffffff;
-$white_darken: #fafafa;
+$white_light: #fafafa;
 
 $blue_light: #00b2ff;
+$blue_dark: #1b2d37;
 
-$grey_light: #c4c4c4;
-$grey_lighter: #cdcdcd;
-$grey_dark: #626269;
-$grey_darker: #666666;
-$grey_darkest: #1b2d37;
+$gray_light: #c4c4c4;
+$gray_lighter: #cdcdcd;
+$gray_dark: #666666;
+$gray_blueish: #626269;
 
 // color pallete
-$color-main_light: $white;
-$color-main_dark: $grey_darker;
-$color-accent: $blue-light;
+$background-color_primary: $white;
+$background-color_secondary: $blue_dark;
+$background-color_accent: $blue_light;
+
+$text-color_primary: $gray_dark;
+$text-color_secondary: $white;
+$text-color_accent: $blue_light;
+$text-color_footer: $blue_dark;
 
 // fonts
 $font-family_main: "PT Mono", "Courier New", monospace;

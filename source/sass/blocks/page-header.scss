@@ -1,7 +1,7 @@
 .page-header {
   @include container_desktop;
   @include font-main();
-  color: $color-main_light;
+  color: $text-color_secondary;
 
   // временно
   background: black;
@@ -34,18 +34,19 @@
 .page-header__link {
   display: flex;
   align-items: center;
-  color: $color-main_light;
+  color: $text-color_secondary;
 
   svg {
-    fill: $color-accent;
+    fill: $text-color_accent;
+    @include transition;
   }
 
   &[href]:hover,
   &[href]:focus {
-    color: $color-accent;
+    color: $text-color_accent;
 
     svg {
-      fill: $color-main_light;
+      fill: $text-color_secondary;
     }
   }
 
@@ -70,6 +71,10 @@
 
 .page-header__link_phone .page-header__link-icon {
   margin-right: 16px;
+}
+
+.page-header__callback-button {
+  width: 180px;
 }
 
 @media (max-width: $tablet-width) {

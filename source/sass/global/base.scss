@@ -6,9 +6,9 @@ body {
   min-width: 320px;
 
   @include font-main();
-  color: $color-main_dark;
+  color: $text-color_primary;
 
-  background-color: $white;
+  background-color: $background-color_primary;
 }
 
 *,

@@ -1,0 +1,25 @@
+.social-list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 112px;
+}
+
+.social-list__item-link {
+  display: block;
+  line-height: 0;
+
+  &:hover .social-list__item-icon,
+  &:focus .social-list__item-icon {
+    fill: $text-color_accent;
+  }
+}
+
+.social-list__item-icon {
+  @include transition;
+
+  fill: $gray_lighter;
+}
+

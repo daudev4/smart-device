@@ -58,11 +58,11 @@
   line-height: $height;
 }
 
-@mixin font-main($family: $font-family_main, $size: $font-size_m, $weight: 400, $height: $line-height_m) {
+@mixin font-main($family: $font-family_primary, $size: $font-size_m, $weight: 400, $height: $line-height_m) {
   @include font($family, $size, $weight, $height)
 }
 
-@mixin font-headline($family: $font-family_headline, $size: $font-size_l, $weight: 400, $height: $line-height_l) {
+@mixin font-headline($family: $font-family_secondary, $size: $font-size_l, $weight: 400, $height: $line-height_l) {
   @include font($family, $size, $weight, $height)
 }
 

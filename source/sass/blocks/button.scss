@@ -1,6 +1,6 @@
 .button {
   @include button-reset;
-  @include font($font-family_headline, $font-size_s, 700, $line-height_s);
+  @include font($font-family_secondary, $font-size_s, 700, $line-height_s);
   padding: 14px 0 13px;
   text-align: center;
   letter-spacing: 0.05em;

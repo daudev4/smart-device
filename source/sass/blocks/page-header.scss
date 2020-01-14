@@ -1,5 +1,5 @@
 .page-header {
-  @include container_desktop;
+  width: 100%;
   @include font-main();
   color: $text-color_secondary;
 
@@ -8,13 +8,17 @@
 }
 
 .page-header__inner {
+  @include container_desktop;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 33px 0;
+  padding-top: 33px;
+  padding-bottom: 33px;
 }
 
 .page-header__logo {
+  @include transition;
+
   &[href]:hover,
   &[href]:focus {
     opacity: 0.7;

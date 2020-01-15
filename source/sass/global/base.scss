@@ -3,6 +3,8 @@ html {
 }
 
 body {
+  position: relative;
+
   min-width: 320px;
 
   @include font-main();

@@ -1,10 +1,12 @@
 .page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
   width: 100%;
   @include font-main();
   color: $text-color_secondary;
-
-  // временно
-  background: black;
 }
 
 .page-header__inner {
@@ -81,7 +83,7 @@
   width: 180px;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-width_tablet) {
   .page-header {
     @include container_tablet;
   }
@@ -121,7 +123,7 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $max-width_mobile) {
   .page-header {
     @include container_mobile;
   }

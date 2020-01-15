@@ -65,17 +65,17 @@
   }
 }
 
-.page-footer__block-list {
+.page-footer__item-list {
   display: flex;
   flex-wrap: wrap;
   min-width: 70.2%;
 }
 
-.page-footer__block-item {
+.page-footer__item {
   margin-bottom: 60px;
 }
 
-.page-footer__block-header {
+.page-footer__item-title {
   margin: 0;
   margin-bottom: 25px;
 
@@ -85,11 +85,11 @@
   text-transform: uppercase;
 }
 
-.page-footer__block-button {
+.page-footer__item-button {
   display: none;
 }
 
-.page-footer__block-item_navigation {
+.page-footer__item-navigation {
   min-width: 60%;
   margin-right: auto;
 }
@@ -151,7 +151,7 @@
   margin-right: auto;
 }
 
-@media (max-width: $tablet-width) {
+@media (max-width: $max-width_tablet) {
 
   .page-footer {
     padding-top: 0;
@@ -177,7 +177,7 @@
     margin-bottom: 0;
   }
 
-  .page-footer__block-list {
+  .page-footer__item-list {
     position: relative;
 
     width: 100%;
@@ -198,11 +198,11 @@
     }
   }
 
-  .page-footer__block-item {
+  .page-footer__item {
     margin-bottom: 0;
   }
 
-  .page-footer__block-item_navigation {
+  .page-footer__item-navigation {
     min-width: 50%;
   }
 
@@ -237,7 +237,7 @@
   }
 }
 
-@media (max-width: $mobile-width) {
+@media (max-width: $max-width_mobile) {
   .page-footer__inner {
     @include container_mobile;
   }
@@ -252,12 +252,12 @@
     margin-bottom: 80px;
   }
 
-  .page-footer__block-list {
+  .page-footer__item-list {
     padding: 0;
     padding-bottom: 30px;
   }
 
-  .page-footer__block-item {
+  .page-footer__item {
     display: flex;
     // justify-content: space-between;
     flex-wrap: wrap;
@@ -266,7 +266,7 @@
     min-width: 100%;
   }
 
-  .page-footer__block-item_navigation {
+  .page-footer__item-navigation {
     position: relative;
 
     &::after {
@@ -284,7 +284,7 @@
     }
   }
 
-  .page-footer__block-header {
+  .page-footer__item-title {
     min-width: 80%;
     flex-grow: 1;
     margin-bottom: 0;
@@ -292,7 +292,7 @@
     padding-bottom: 28px;
   }
 
-  .page-footer__block-button {
+  .page-footer__item-button {
     @include button-reset;
     display: block;
     width: 16px;
@@ -306,7 +306,7 @@
     }
   }
 
-  .page-footer__block-button_active {
+  .page-footer__item-button_active {
     background-image: url("../img/icon-minus.svg");
   }
 

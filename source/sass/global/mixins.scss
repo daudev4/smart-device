@@ -5,13 +5,13 @@
 }
 
 @mixin container_tablet {
-  max-width: $tablet-width;
+  max-width: $max-width_tablet;
   margin: 0 auto;
   padding: 0 25px;
 }
 
 @mixin container_mobile {
-  max-width: $mobile-width;
+  max-width: $max-width_mobile;
   margin: 0 auto;
   padding: 0 15px;
 }

@@ -69,14 +69,14 @@
   border: 1px solid #ebebeb;
   border-left: none;
   background-color: $background-color_primary;
-  box-shadow: inset 3px 0 0 $background-color_accent;
+  box-shadow: inset 3px 0 0 0.01px $background-color_accent;
   cursor: pointer;
 
   @include transition;
 
   &:hover,
   &:focus {
-    box-shadow: inset 800px 0 0 $background-color_accent;
+    box-shadow: inset 800px 0 0 0.01px $background-color_accent;
 
     .advantages__item-icon {
       fill: $text-color_secondary;
@@ -145,7 +145,7 @@
     padding-bottom: 22px;
     padding-left: 27px;
 
-    box-shadow: inset 2px 0 0 $background-color_accent;
+    box-shadow: inset 2px 0 0 0.01px $background-color_accent;
   }
 
   .advantages__item:nth-of-type(2n+1) {

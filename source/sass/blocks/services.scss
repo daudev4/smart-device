@@ -1,0 +1,232 @@
+.services {
+  padding-top: 88px;
+  padding-bottom: 127px;
+
+  @include font-headline;
+  color: $text-color_secondary;
+
+  background-color: $background-color_secondary;
+}
+
+.services__inner {
+  @include container_desktop;
+  max-width: 1240px;
+}
+
+.services__title {
+  margin: 0;
+  margin-bottom: 53px;
+
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 51px;
+}
+
+.services__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @include list-reset;
+}
+
+.services__item {
+  width: 31.6%;
+  margin-right: 2.5%;
+
+  background-color: $blue_dark;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+
+  &:nth-of-type(3n) {
+    margin-right: 0;
+  }
+
+  &:nth-of-type(n+4) {
+    margin-top: 30px;
+  }
+
+  &_production {
+    background-image: url("../img/production_desktop@1x.png");
+  }
+
+  &_assembly {
+    background-image: url("../img/assembly_desktop@1x.png");
+  }
+
+  &_components {
+    background-image: url("../img/components_desktop@1x.png");
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    &_production {
+      background-image: url("../img/production_desktop@2x.png");
+    }
+
+    &_assembly {
+      background-image: url("../img/assembly_desktop@2x.png");
+    }
+
+    &_components {
+      background-image: url("../img/components_desktop@2x.png");
+    }
+  }
+}
+
+.services__item-link {
+  position: relative;
+
+  display: block;
+  min-height: 620px;
+  padding-top: 50px;
+  padding-right: 155px;
+  padding-left: 44px;
+
+  color: inherit;
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 63px;
+    height: 63px;
+
+    background-color: $background-color_accent;
+    background-image: url("../img/arrow-right.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+}
+
+.services__item-title {
+  margin: 0;
+
+  font: inherit;
+}
+
+@media (max-width: $max-width_tablet) {
+  .services {
+    padding-top: 50px;
+    padding-bottom: 78px;
+  }
+
+  .services__inner {
+    @include container_tablet;
+  }
+
+  .services__title {
+    margin-bottom: 50px;
+
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .services__list {
+    flex-direction: column;
+  }
+
+  .services__item {
+    width: 100%;
+    margin: 0;
+
+    &:nth-of-type(n+2) {
+      margin-top: 46px;
+    }
+
+    &_production {
+      background-image: url("../img/production_tablet@1x.png");
+    }
+
+    &_assembly {
+      background-image: url("../img/assembly_tablet@1x.png");
+    }
+
+    &_components {
+      background-image: url("../img/components_tablet@1x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &_production {
+        background-image: url("../img/production_tablet@2x.png");
+      }
+
+      &_assembly {
+        background-image: url("../img/assembly_tablet@2x.png");
+      }
+
+      &_components {
+        background-image: url("../img/components_tablet@2x.png");
+      }
+    }
+  }
+
+  .services__item-link {
+    min-height: 256px;
+    padding-top: 40px;
+    padding-right: 505px;
+  }
+}
+
+@media (max-width: $max-width_mobile) {
+  .services {
+    padding-bottom: 64px;
+  }
+
+  .services__inner {
+    @include container_mobile;
+  }
+
+  .services__title {
+    margin-bottom: 43px;
+    padding-left: 10px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .services__item {
+    &:nth-of-type(n+2) {
+      margin-top: 30px;
+    }
+
+    &_production {
+      background-image: url("../img/production_mobile@1x.png");
+    }
+
+    &_assembly {
+      background-image: url("../img/assembly_mobile@1x.png");
+    }
+
+    &_components {
+      background-image: url("../img/components_mobile@1x.png");
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &_production {
+        background-image: url("../img/production_mobile@2x.png");
+      }
+
+      &_assembly {
+        background-image: url("../img/assembly_mobile@2x.png");
+      }
+
+      &_components {
+        background-image: url("../img/components_mobile@2x.png");
+      }
+    }
+  }
+
+  .services__item-link {
+    padding-top: 21px;
+    padding-right: 85px;
+    padding-left: 35px;
+  }
+}

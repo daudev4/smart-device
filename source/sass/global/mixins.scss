@@ -66,3 +66,10 @@
   @include font($family, $size, $weight, $height)
 }
 
+@mixin animation-rotation_right {
+  animation: rotation-right 20s linear infinite;
+}
+
+@mixin animation-rotation_left {
+  animation: rotation-left 20s linear infinite;
+}

@@ -48,3 +48,21 @@ $max-width_tablet: 1023px;
 // retina
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+
+@keyframes rotation-right {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation-left {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}

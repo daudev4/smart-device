@@ -1,0 +1,147 @@
+.about {
+  padding-top: 105px;
+  padding-bottom: 110px;
+
+  @include font-main;
+  color: $text-color_primary;
+}
+
+.about__inner {
+  position: relative;
+  z-index: 2;
+
+  @include container_desktop;
+  max-width: 1240px;
+  padding-left: 215px;
+  padding-right: 50px;
+
+  &::before {
+    content: "";
+
+    z-index: 1;
+    position: absolute;
+    top: 12px;
+    left: 37px;
+
+    width: 115px;
+    height: 305px;
+
+    background-image: url('../img/2005_desktop@1x.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/2005_desktop@2x.png");
+    }
+  }
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 21px;
+
+  @include font($font-family_secondary, 36px, 400, 51px);
+}
+
+.about__text {
+  margin: 0;
+  margin-bottom: 21px;
+
+  &:last-of-type {
+    margin-bottom: 41px;
+  }
+}
+
+.about__text-ellipsis {
+  display: none;
+}
+
+.about__button {
+  width: 180px;
+
+  color: $text-color_accent;
+
+  border-color: $text-color_accent;
+
+  &:hover,
+  &:focus {
+    color: $text-color_secondary;
+
+    background-color: $text-color_accent;
+  }
+}
+
+@media (max-width: $max-width_tablet) {
+
+  .about {
+    padding-top: 55px;
+    padding-bottom: 83px;
+  }
+
+  .about__inner {
+    @include container_tablet;
+    padding-left: 213px;
+
+    &::before {
+      top: 7px;
+      left: 28px;
+
+      width: 131px;
+      height: 347px;
+    }
+  }
+
+  .about__title {
+    margin-bottom: 26px;
+
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .about__text {
+    &:last-of-type {
+      margin-bottom: 43px;
+    }
+  }
+
+  .about__text-ellipsis {
+    display: inline;
+  }
+
+  .about__text-hidden {
+    display: none;
+  }
+}
+
+@media (max-width: $max-width_mobile) {
+  .about {
+    padding-top: 58px;
+    padding-bottom: 65px;
+  }
+
+  .about__inner {
+    @include container_mobile;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .about__title {
+    margin-bottom: 21px;
+
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .about__text {
+    margin-bottom: 43px;
+  }
+
+  .about__text {
+    &:last-of-type {
+      margin-bottom: 31px;
+    }
+  }
+}

@@ -1,4 +1,7 @@
 .services {
+  z-index: 1;
+  position: relative;
+
   padding-top: 88px;
   padding-bottom: 127px;
 
@@ -15,6 +18,7 @@
 
 .services__title {
   margin: 0;
+  margin-right: 110px;
   margin-bottom: 53px;
 
   font-size: 36px;

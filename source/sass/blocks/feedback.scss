@@ -1,0 +1,140 @@
+.feedback {
+  position: relative;
+
+  padding-top: 90px;
+  padding-bottom: 113px;
+
+  @include font-main;
+  color: $text-color_secondary;
+
+  background-color: $background-color_accent;
+
+  &::before,
+  &::after {
+    content: "";
+
+    z-index: 0;
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+  }
+
+  &::before {
+    top: -60px;
+    left: calc(50% - 751px);
+
+    width: 637px;
+    height: 640px;
+
+    background-image: url('../img/triangle-dotted_white.svg');
+    @include animation-rotation_left;
+  }
+
+  &::after {
+    content: "";
+
+    position: absolute;
+    top: 204px;
+    left: calc(50% - 785px);
+
+    width: 373px;
+    height: 377px;
+
+    background-image: url('../img/triangle-dotted-small_white.svg');
+    @include animation-rotation_right;
+  }
+}
+
+.feedback__inner {
+  position: relative;
+  z-index: 3;
+
+  @include container_desktop;
+  max-width: 1240px;
+
+  background-image: url("../img/airplane@1x.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 354px) 70px;
+  background-size: auto;
+
+  &::before,
+  &::after {
+    content: "";
+
+    z-index: -1;
+    position: absolute;
+
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &::before {
+    top: -6px;
+    right: -311px;
+
+    width: 234px;
+    height: 234px;
+
+    background-image: url('../img/triangle_white.svg');
+    transform: rotate(30deg);
+    @include animation-rotation_left;
+  }
+
+    &::after {
+    top: 159px;
+    right: -437px;
+
+    width: 373px;
+    height: 373px;
+
+    background-image: url('../img/triangle_white.svg');
+    transform: rotate(-30deg);
+    @include animation-rotation_right;
+  }
+}
+
+.feedback__form {
+  max-width: 570px;
+  margin-left: auto;
+}
+
+@media (max-width: $max-width_tablet) {
+  .feedback {
+    padding-top: 79px;
+    padding-bottom: 104px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .feedback__inner {
+    @include container_tablet;
+
+    background-image: none;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .feedback__form {
+    max-width: 590px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: $max-width_mobile) {
+  .feedback {
+    padding-top: 31px;
+    padding-bottom: 43px;
+  }
+
+  .feedback__inner {
+    @include container_mobile;
+  }
+}

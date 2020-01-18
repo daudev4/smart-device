@@ -1,0 +1,35 @@
+@media (max-width: $max-width_mobile) {
+  .accordion_closed {
+    .accordion__button {
+      display: block;
+    }
+
+    .accordion__body {
+      display: none;
+    }
+  }
+
+  .accordion_opened {
+    .accordion__button {
+      display: block;
+      background-image: url("../img/icon-minus.svg");
+    }
+  }
+
+  .accordion__button {
+    @include button-reset;
+    display: none;
+    width: 16px;
+    height: 16px;
+    background-color: transparent;
+    background-image: url("../img/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}

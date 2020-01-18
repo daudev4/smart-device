@@ -4,6 +4,22 @@
 
   @include font-main;
   color: $text-color_primary;
+
+  h2 {
+    margin: 0;
+    margin-bottom: 21px;
+
+    @include font($font-family_secondary, 36px, 400, 51px);
+  }
+
+  p {
+    margin: 0;
+    margin-bottom: 21px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .about__inner {
@@ -37,27 +53,13 @@
   }
 }
 
-.about__title {
-  margin: 0;
-  margin-bottom: 21px;
-
-  @include font($font-family_secondary, 36px, 400, 51px);
-}
-
-.about__text {
-  margin: 0;
-  margin-bottom: 21px;
-
-  &:last-of-type {
-    margin-bottom: 41px;
-  }
-}
-
 .about__text-ellipsis {
   display: none;
 }
 
 .about__button {
+  margin-top: 41px;
+  margin-bottom: 41px;
   width: 180px;
 
   color: $text-color_accent;
@@ -70,6 +72,10 @@
 
     background-color: $text-color_accent;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: $max-width_tablet) {
@@ -77,6 +83,13 @@
   .about {
     padding-top: 55px;
     padding-bottom: 83px;
+
+    h2 {
+      margin-bottom: 26px;
+
+      font-size: 32px;
+      line-height: 45px;
+    }
   }
 
   .about__inner {
@@ -92,19 +105,6 @@
     }
   }
 
-  .about__title {
-    margin-bottom: 26px;
-
-    font-size: 32px;
-    line-height: 45px;
-  }
-
-  .about__text {
-    &:last-of-type {
-      margin-bottom: 43px;
-    }
-  }
-
   .about__text-ellipsis {
     display: inline;
   }
@@ -112,12 +112,32 @@
   .about__text-hidden {
     display: none;
   }
+
+  .about__button {
+    margin-top: 43px;
+    margin-bottom: 43px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 @media (max-width: $max-width_mobile) {
   .about {
     padding-top: 58px;
     padding-bottom: 65px;
+
+    h2 {
+      margin-bottom: 21px;
+
+      font-size: 28px;
+      line-height: 39px;
+    }
+
+    p {
+      margin-bottom: 43px;
+    }
   }
 
   .about__inner {
@@ -128,20 +148,12 @@
     }
   }
 
-  .about__title {
-    margin-bottom: 21px;
+  .about__button {
+    margin-top: 31px;
+    margin-bottom: 31px;
 
-    font-size: 28px;
-    line-height: 39px;
-  }
-
-  .about__text {
-    margin-bottom: 43px;
-  }
-
-  .about__text {
-    &:last-of-type {
-      margin-bottom: 31px;
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 }

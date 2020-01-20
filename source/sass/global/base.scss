@@ -51,3 +51,8 @@ textarea {
 svg {
   fill: inherit;
 }
+
+.no-scroll {
+  height: 100%;
+  overflow: hidden;
+}

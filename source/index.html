@@ -366,6 +366,54 @@
     </div>
   </footer>
 
+  <section class="modal">
+    <h2 class="visually-hidden">
+      Форма обратной связи
+    </h2>
+    <div class="modal__inner">
+      <button class="modal__close">
+        <span class="visually-hidden">
+          Закрыть окно
+        </span>
+      </button>
+      <form class="modal__form form" action="https://echo.htmlacademy.ru" method="post">
+        <p>Закажите звонок</p>
+        <p>Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+        <div class="form__inner">
+          <div class="form__field-input">
+            <label class="visually-hidden" for="modal-name">
+              Ваше имя
+            </label>
+            <input id="modal-name" type="text" name="modal-name" placeholder="Имя" size="12" autocomplete="name" required>
+          </div>
+          <div class="form__field-input">
+            <label class="visually-hidden" for="modal-phone">
+              Ваш телефон
+            </label>
+            <input id="modal-phone" type="tel" name="modal-phone" placeholder="Телефон" autocomplete="tel" pattern="^\+\d{1}\s\(\d{3}\)\s\d{3}-\d{2}-\d{2}" mask-pattern="+{7} (000) 000-00-00" required>
+          </div>
+          <div class="form__field-textarea">
+            <label class="visually-hidden" for="modal-question">
+              Ваш вопрос
+            </label>
+            <textarea id="modal-question" name="modal-question" placeholder="Ваш вопрос" rows="3"></textarea>
+          </div>
+        </div>
+        <div class="form__agreement">
+          <button class="button" type="submit">
+            Отправить
+          </button>
+          <div class="form__field-checkbox">
+            <input id="modal-agreement" type="checkbox" name="modal-agreement" value="1" aria-invalid="false" checked required>
+            <label for="modal-agreement">
+              Я согласен на обработку персональных данных
+            </label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
 </body>

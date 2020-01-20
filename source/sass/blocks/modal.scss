@@ -1,0 +1,143 @@
+.modal {
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($black, 0.5);
+  @include transition;
+
+  &_show {
+    display: flex;
+
+    animation: fade-in 1s ease;
+  }
+}
+
+.modal__inner {
+  position: relative;
+
+  max-width: 490px;
+  padding-top: 30px;
+  padding-right: 40px;
+  padding-bottom: 37px;
+  padding-left: 40px;
+
+  background-color: $background-color_accent;
+  animation: scale-in 0.5s ease;
+}
+
+.modal__close {
+  @include button-reset;
+
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+
+  width: 17px;
+  height: 17px;
+
+  cursor: pointer;
+  background-color: transparent;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.modal__form {
+
+  p:first-of-type {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  p {
+    max-width: 380px;
+    margin-top: 13px;
+  }
+
+  .form__inner {
+    margin-top: 32px;
+  }
+
+  .form__field-input,
+  .form__field-textarea {
+    width: 100%;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__field-input {
+    input {
+      padding-top: 13px;
+      padding-bottom: 18px;
+      padding-left: 23px;
+    }
+  }
+
+  .form__field-textarea {
+    min-height: 104px;
+
+    textarea {
+      padding-left: 23px;
+    }
+  }
+
+  .form__agreement {
+    flex-direction: column;
+    margin-top: 30px;
+
+    button[type="submit"] {
+      width: 100%;
+    }
+  }
+
+  .form__field-checkbox {
+    margin-top: 32px;
+    width: 100%;
+
+    label {
+      max-width: 390px;
+      padding-left: 48px;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes scale-in {
+  0% {
+    transform: scale(0)
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}

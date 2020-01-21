@@ -5,20 +5,17 @@
   @include font-main;
   color: $text-color_primary;
 
-  h2 {
+  p, h2 {
     margin: 0;
     margin-bottom: 21px;
 
-    @include font($font-family_secondary, 36px, 400, 51px);
-  }
-
-  p {
-    margin: 0;
-    margin-bottom: 21px;
-
-    &:last-of-type {
+    &:last-child{
       margin-bottom: 0;
     }
+  }
+
+  h2 {
+    @include font($font-family_secondary, 36px, 400, 51px);
   }
 }
 
@@ -102,6 +99,12 @@
 
       width: 131px;
       height: 347px;
+
+      background-image: url('../img/2005_tablet@1x.png');
+
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/2005_tablet@2x.png");
+      }
     }
   }
 

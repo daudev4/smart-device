@@ -14,15 +14,15 @@
 .services__inner {
   @include container_desktop;
   max-width: 1240px;
-}
 
-.services__title {
-  margin: 0;
-  margin-bottom: 53px;
+  p, h2 {
+    margin: 0;
+    margin-bottom: 53px;
 
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 51px;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 51px;
+  }
 }
 
 .services__list {
@@ -88,6 +88,15 @@
 
   color: inherit;
 
+  h3 {
+    z-index: 2;
+    position: relative;
+
+    margin: 0;
+
+    font: inherit;
+  }
+
   &::after {
     content: "";
 
@@ -105,7 +114,6 @@
     background-image: url("../img/arrow-right.svg");
     background-repeat: no-repeat;
     background-position: 100% 100%;
-    // background-size: cover;
 
     @include transition;
   }
@@ -117,7 +125,7 @@
   }
 
   &:active::after {
-    opacity: 0.7;
+    opacity: 0.3;
   }
 }
 
@@ -138,14 +146,14 @@
 
   .services__inner {
     @include container_tablet;
-  }
 
-  .services__title {
-    margin-right: 110px;
-    margin-bottom: 50px;
+    p, h2 {
+      margin-right: 110px;
+      margin-bottom: 50px;
 
-    font-size: 32px;
-    line-height: 45px;
+      font-size: 32px;
+      line-height: 45px;
+    }
   }
 
   .services__list {
@@ -201,15 +209,15 @@
 
   .services__inner {
     @include container_mobile;
-  }
 
-  .services__title {
-    margin-right: 0;
-    margin-bottom: 43px;
-    padding-left: 10px;
+    p, h2 {
+      margin-right: 0;
+      margin-bottom: 43px;
+      padding-left: 10px;
 
-    font-size: 28px;
-    line-height: 39px;
+      font-size: 28px;
+      line-height: 39px;
+    }
   }
 
   .services__item {

@@ -57,7 +57,7 @@
   }
 
   &[href]:active {
-    opacity: 0.7;
+    opacity: 0.3;
   }
 
   @include transition;
@@ -67,7 +67,7 @@
   margin-right: 88px;
 }
 
-.page-header__link_email .page-header__link-icon {
+.page-header__link_email svg {
   margin-right: 20px;
 }
 
@@ -75,7 +75,7 @@
   margin-right: 50px;
 }
 
-.page-header__link_phone .page-header__link-icon {
+.page-header__link_phone svg {
   margin-right: 16px;
 }
 
@@ -95,15 +95,16 @@
   .page-header__link {
     margin-right: 0;
     margin-bottom: 3px;
-  }
 
-  .page-header__link-text {
-    @include hidden;
+    span {
+      @include hidden;
+    }
   }
 
   .page-header__link_email {
     margin-right: 34px;
-    & .page-header__link-icon {
+
+    svg {
       width: 25px;
       height: 18px;
       margin-right: 0;
@@ -111,7 +112,8 @@
   }
 
   .page-header__link_phone {
-    & .page-header__link-icon {
+
+    svg {
       width: 24px;
       height: 24px;
       margin-right: 0;

@@ -7,19 +7,20 @@
   width: 112px;
 }
 
-.social-list__item-link {
-  display: block;
-  line-height: 0;
+.social-list__item {
+  a {
+    display: block;
+    line-height: 0;
+  }
 
-  &:hover .social-list__item-icon,
-  &:focus .social-list__item-icon {
+  svg {
+    @include transition;
+
+    fill: $gray_lighter;
+  }
+
+  &:hover svg,
+  &:focus svg {
     fill: $text-color_accent;
   }
 }
-
-.social-list__item-icon {
-  @include transition;
-
-  fill: $gray_lighter;
-}
-

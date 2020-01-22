@@ -4,7 +4,9 @@
   left: 0;
   z-index: 100;
 
+  flex-shrink: 0;
   width: 100%;
+  
   @include font-main();
   color: $text-color_secondary;
 }

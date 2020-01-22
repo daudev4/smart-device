@@ -1,6 +1,11 @@
 .intro {
-  z-index: 0;
+  z-index: 3;
   position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   @include font-main;
   color: $text-color_secondary;
 
@@ -55,10 +60,13 @@
 .intro__inner {
   position: relative;
 
-  @include container_desktop;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
   min-height: 880px;
+
+  @include container_desktop;
 
   &::after {
     content: "";

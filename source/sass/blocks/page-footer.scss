@@ -225,8 +225,11 @@
   }
 
   .page-footer__navigation-list {
+    flex-direction: column;
     min-width: 100%;
     max-height: 100%;
+
+    writing-mode: horizontal-tb;
 
     li:nth-of-type(n+5) {
       margin: 0;

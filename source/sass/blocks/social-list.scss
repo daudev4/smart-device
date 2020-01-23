@@ -2,12 +2,17 @@
   @include list-reset;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 112px;
+  min-width: 112px;
 }
 
 .social-list__item {
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
   a {
     display: block;
     line-height: 0;

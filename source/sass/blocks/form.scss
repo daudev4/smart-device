@@ -199,6 +199,10 @@
   .form__agreement {
     margin-top: 45px;
   }
+
+  .form__field-checkbox {
+    width: calc(50% - 27px);
+  }
 }
 
 @media (max-width: $max-width_mobile) {

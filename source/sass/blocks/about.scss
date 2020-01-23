@@ -9,7 +9,7 @@
     margin: 0;
     margin-bottom: 21px;
 
-    &:last-child{
+    &:nth-last-child(2) {
       margin-bottom: 0;
     }
   }

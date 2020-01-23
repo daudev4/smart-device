@@ -268,7 +268,7 @@
 
   .intro__inner {
     @include container_mobile;
-    align-items: flex-end;
+    justify-content: flex-end;
     min-height: 647px;
 
     &::after {

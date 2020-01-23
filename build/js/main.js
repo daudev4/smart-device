@@ -28,7 +28,7 @@
   var setMask = function (input) {
     Array.prototype.forEach.call(maskedInputs, function (input) {
       var maskOption = {
-        mask: input.getAttribute('mask-pattern')
+        mask: input.getAttribute('data-mask')
       };
       IMask(input, maskOption);
     });

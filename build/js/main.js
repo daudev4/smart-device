@@ -3,7 +3,7 @@
 (function () {
   var accordionElements = document.querySelectorAll('.accordion');
 
-  accordionElements.forEach(function (accordion) {
+  Array.prototype.forEach.call(accordionElements, function (accordion) {
     var accordionButton = accordion.querySelector('.accordion__button');
 
     accordion.classList.add('accordion_closed');
@@ -23,7 +23,7 @@
 'use strict';
 
 (function () {
-  var maskedInputs = document.querySelectorAll('input[mask-pattern]');
+  var maskedInputs = document.querySelectorAll('input[data-mask]');
 
   var setMask = function (input) {
     Array.prototype.forEach.call(maskedInputs, function (input) {

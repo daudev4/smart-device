@@ -3,7 +3,7 @@
 'use strict';
 
 (function () {
-  var maskedInputs = document.querySelectorAll('input[mask-pattern]');
+  var maskedInputs = document.querySelectorAll('input[data-mask]');
 
   var setMask = function (input) {
     Array.prototype.forEach.call(maskedInputs, function (input) {

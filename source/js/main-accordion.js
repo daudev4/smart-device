@@ -3,7 +3,7 @@
 (function () {
   var accordionElements = document.querySelectorAll('.accordion');
 
-  accordionElements.forEach(function (accordion) {
+  Array.prototype.forEach.call(accordionElements, function (accordion) {
     var accordionButton = accordion.querySelector('.accordion__button');
 
     accordion.classList.add('accordion_closed');

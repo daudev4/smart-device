@@ -22,16 +22,19 @@
 
     font-size: $font-size_m;
     line-height: 19px;
+  }
 
+  &:hover,
+  &:focus {
+    background: $background-color_primary;
+    color: $text-color_accent;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
 
-.button:hover,
-.button:focus {
-  background: $background-color_primary;
-  color: $text-color_accent;
-}
 
-.button:active {
-  opacity: 0.3;
-}
+
+
